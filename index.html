@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f3ec">
+  <meta name="description" content="دعوة زفاف صهيب وفلة – السبت 19/9/2026">
+  <title>صهيب وفلة | دعوة زفاف</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="opening-screen" id="coverScreen" aria-label="غلاف الدعوة">
+    <div class="artboard cover-board">
+      <img src="cover.png" alt="مغلف دعوة زفاف أبيض مزخرف">
+      <span class="open-caption">افتح الدعوة</span>
+      <button class="cover-hotspot" id="openInvitation" aria-label="اضغط لفتح الدعوة"></button>
+    </div>
+  </section>
+  <section class="video-screen" id="videoScreen" hidden aria-label="فيديو فتح المغلف">
+    <div class="artboard video-board"><video id="openingVideo" playsinline preload="auto" muted><source src="opening.mp4" type="video/mp4"></video></div>
+    <button class="skip" id="skipVideo" aria-label="تخطي الفيديو">تخطي</button>
+  </section>
+  <main id="invitation" hidden aria-label="دعوة زفاف صهيب وفلة">
+    <section class="image-page" aria-label="احفظوا التاريخ">
+      <div class="artboard"><img src="save-the-date.png" alt="Save the Date لحفل زفاف صهيب وفلة"></div>
+    </section>
+    <section class="image-page" aria-label="تفاصيل حفل الزفاف">
+      <div class="artboard"><img src="details.jpg" alt="دعوة زفاف صهيب وفلة وتفاصيل طلعة العروس وحفل الزفاف"></div>
+      <span class="swipe-hint">مرّري للأعلى⌄</span>
+    </section>
+    <section class="image-page" aria-label="تفاصيل ليلة الحنّة">
+      <div class="artboard"><img src="henna.jpg" alt="ليلة حنّة فلة في قاعة زهرة المدائن حزما يوم الأربعاء 16 أيلول 2026 الساعة الخامسة مساءً"></div>
+    </section>
+    <section class="image-page countdown-page" aria-label="العد التنازلي">
+      <div class="artboard">
+        <img src="countdown.jpg" alt="العد التنازلي لحفل زفاف صهيب وفلة">
+        <div class="countdown-values" dir="ltr" aria-live="polite"><strong id="days">00</strong><strong id="hours">00</strong><strong id="minutes">00</strong><strong id="seconds">00</strong></div>
+      </div>
+    </section>
+    <section class="image-page location-page" aria-label="موقع الحفل">
+      <div class="artboard">
+        <img src="location.jpg" alt="موقع حفل الزفاف في قاعة رويال الملكية أبو ديس">
+        <button class="location-hotspot link-hotspot" type="button" data-link="https://maps.app.goo.gl/Bi7xpHZ347pHa6yZ6" aria-label="فتح موقع قاعة رويال الملكية على الخريطة"></button>
+      </div>
+    </section>
+    <section class="rsvp-page" aria-label="تأكيد الحضور">
+      <div class="artboard rsvp-board">
+        <img src="rsvp.jpg" alt="تأكيد حضور حفل زفاف صهيب وفلة">
+        <button class="rsvp-hotspot link-hotspot" type="button" data-link="https://wa.me/972593828727?text=%D9%86%D8%A4%D9%83%D8%AF%20%D8%AD%D8%B6%D9%88%D8%B1%D9%86%D8%A7%20%D8%AD%D9%81%D9%84%20%D8%B2%D9%81%D8%A7%D9%81%20%D8%B5%D9%87%D9%8A%D8%A8%20%D9%88%D9%81%D9%84%D8%A9" aria-label="تأكيد الحضور عبر واتساب"></button>
+        <div class="social-hotspots rsvp-social" dir="ltr">
+          <button class="link-hotspot" type="button" data-link="https://www.instagram.com/ghada.invitations?igsi=dndkd3lhMmJ0M2E5&amp;utm_source=qr" aria-label="Instagram"></button>
+          <button class="link-hotspot" type="button" data-link="https://www.tiktok.com/@ghada.invitations?_r=1&amp;_t=ZS-99Ru8uGvd10" aria-label="TikTok"></button>
+          <button class="link-hotspot" type="button" data-link="https://snapchat.com/t/U3BfbICt" aria-label="Snapchat"></button>
+        </div>
+      </div>
+    </section>
+    <section class="image-page social-page" aria-label="صفحة التواصل والختام">
+      <div class="artboard">
+        <img src="social.jpg" alt="شكرًا لحضوركم وروابط التواصل الاجتماعي">
+        <div class="social-hotspots" dir="ltr">
+          <button class="link-hotspot" type="button" data-link="https://www.instagram.com/ghada.invitations?igsi=dndkd3lhMmJ0M2E5&amp;utm_source=qr" aria-label="Instagram"></button>
+          <button class="link-hotspot" type="button" data-link="https://www.tiktok.com/@ghada.invitations?_r=1&amp;_t=ZS-99Ru8uGvd10" aria-label="TikTok"></button>
+          <button class="link-hotspot" type="button" data-link="https://snapchat.com/t/U3BfbICt" aria-label="Snapchat"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <button class="music-toggle" id="musicToggle" hidden aria-label="إيقاف الموسيقى"><span>♫</span></button>
+  <script src="script.js"></script>
+</body>
+</html>
